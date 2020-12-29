@@ -1,0 +1,79 @@
+{
+  "musers": [
+    {
+      "name": "Muhammad",
+      "surname": "Temirsultanov",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Kianu",
+      "surname": "Rivz"
+    },
+    {
+      "id": 4,
+      "name": "Matthew",
+      "surname": "Mcconaughey"
+    },
+    {
+      "id": 5,
+      "name": "Jake",
+      "surname": "Gyllenhaal"
+    },
+    {
+      "name": "Leonardo",
+      "surname": "Di Caprio",
+      "id": 6
+    },
+    {
+      "name": "Dobrinya",
+      "surname": "Nikitich",
+      "id": 8
+    },
+    {
+      "name": "Dima",
+      "surname": "Dmitrov",
+      "id": 9
+    },
+    {
+      "name": "Alexey",
+      "surname": "Vasiliev",
+      "id": 10
+    },
+    {
+      "name": "Мухаммад",
+      "surname": "Темирсултанов",
+      "id": 11
+    },
+    {
+      "name": "Кристиан",
+      "surname": "Голиков",
+      "id": 12
+    },
+    {
+      "name": "Oxana",
+      "surname": "Cirkunova",
+      "id": 13
+    },
+    {
+      "name": "Alexandro",
+      "surname": "Mornello",
+      "id": 14
+    },
+    {
+      "name": "Igor",
+      "surname": "Sharonov",
+      "id": 16
+    },
+    {
+      "name": "Ilya",
+      "surname": "Kanatnikov",
+      "id": 17
+    },
+    {
+      "name": "Vlad",
+      "surname": "Abramov",
+      "id": 18
+    }
+  ]
+}

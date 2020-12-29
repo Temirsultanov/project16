@@ -1,0 +1,26 @@
+<div class="container-fluid mt-4">
+  <form [formGroup]="userForm">
+    <div class="form-group">
+      <label for="username">Name</label>
+      <input
+        type="text"
+        name="name"
+        class="form-control col-5"
+        formControlName="name"
+        id="name"
+      >
+    </div>
+    <div class="form-group">
+      <label for="usersurname">Surname</label>
+      <input
+        type="text"
+        name="surname"
+        class="form-control col-5"
+        formControlName="surname"
+        id="surname"
+      >
+    </div>
+    <button class="btn btn-success mr-3" [disabled]="userForm.invalid" (click)="onSave()">Save</button>
+    <button class="btn btn-outline-danger" *ngIf="id !== null && id !== undefined" (click)="onDelete()">Delete</button>
+  </form>
+</div>

@@ -1,0 +1,29 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12 mb-4">
+      <h2 class="">User list</h2>
+    </div>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Surname</th>
+        <th scope="col" class="text-right">
+          <button class="btn btn-primary" (click)="onAddProfile()">Add user</button>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <th scope="row">{{user.id}}</th>
+        <td>{{user.name}}</td>
+        <td>{{user.surname}}</td>
+        <td class="text-right">
+          <button class="btn btn-outline-success" (click)="onEditProfile(user.id)">Change</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
