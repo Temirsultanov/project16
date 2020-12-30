@@ -1,0 +1,9 @@
+.mbtn svg path{
+  transition: 0.3s ease;
+}
+.mbtn:hover svg path{
+  fill: white;
+}
+.active svg path{
+  fill: white;
+}

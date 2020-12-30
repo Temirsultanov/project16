@@ -1,79 +1,209 @@
 {
   "musers": [
     {
-      "name": "Muhammad",
-      "surname": "Temirsultanov",
+      "name": "Мухаммад",
+      "surname": "Темирсултанов",
+      "patronymic": "Темирсултанович",
+      "phone": "+7 (948)-242-65-84 ",
+      "email": "human.twm@gmail.com",
+      "birthdate": "2001-11-04",
+      "department": 0,
       "id": 2
     },
     {
-      "id": 3,
-      "name": "Kianu",
-      "surname": "Rivz"
+      "name": "Киану",
+      "surname": "Ривз",
+      "patronymic": "Чарльз",
+      "phone": "+7(358) 953-81-20",
+      "email": "crls30@gmail.com",
+      "birthdate": "1997-03-04",
+      "department": 2,
+      "id": 3
     },
     {
-      "id": 4,
-      "name": "Matthew",
-      "surname": "Mcconaughey"
+      "name": "Влад",
+      "surname": "Абрамов",
+      "patronymic": "Алеексеевич",
+      "phone": "9876543210",
+      "email": "thecorner106@gmail.com",
+      "birthdate": "1997-10-12",
+      "department": 1,
+      "id": 19
     },
     {
-      "id": 5,
-      "name": "Jake",
-      "surname": "Gyllenhaal"
+      "name": "Василий",
+      "surname": "Петров",
+      "patronymic": "Дмитриевич",
+      "phone": "+7 (338)-289-86-53",
+      "email": "efokw@fie.com",
+      "birthdate": "2001-11-04",
+      "department": 3,
+      "id": 20
     },
     {
-      "name": "Leonardo",
-      "surname": "Di Caprio",
-      "id": 6
+      "name": "Сэлвин",
+      "surname": "Зарвовский",
+      "patronymic": "Суплатович",
+      "phone": "+7(435) 425-98-38",
+      "email": "ignr5@gmai.com",
+      "birthdate": "1978-05-12",
+      "department": 2,
+      "id": 21
     },
     {
-      "name": "Dobrinya",
-      "surname": "Nikitich",
-      "id": 8
+      "name": "Вадим",
+      "surname": "Немков",
+      "patronymic": "Дмитриевич",
+      "phone": "+7(983) 895-20-18",
+      "email": "jirv4@gmail.com",
+      "birthdate": "1988-07-05",
+      "department": 0,
+      "id": 22
     },
     {
-      "name": "Dima",
-      "surname": "Dmitrov",
-      "id": 9
+      "name": "Леонид",
+      "surname": "Бобров",
+      "patronymic": "Бобрович",
+      "phone": "+7(994) 853-78-27",
+      "email": "vrino4@gmail.com",
+      "birthdate": "1998-06-08",
+      "department": 3,
+      "id": 23
     },
     {
-      "name": "Alexey",
-      "surname": "Vasiliev",
-      "id": 10
+      "name": "Иван",
+      "surname": "Шилов",
+      "patronymic": "Шилович",
+      "phone": "+7(942) 483-59-87",
+      "email": "hu3er@gmail.com",
+      "birthdate": "1983-09-08",
+      "department": 2,
+      "id": 24
     },
     {
-      "name": "Мухаммад",
-      "surname": "Темирсултанов",
-      "id": 11
+      "name": "Мирослав",
+      "surname": "Тарасов",
+      "patronymic": "Тарасович",
+      "phone": "+7(998) 374-92-73",
+      "email": "fikider@gmail.com",
+      "birthdate": "20002-03-09",
+      "department": 1,
+      "id": 25
     },
     {
-      "name": "Кристиан",
-      "surname": "Голиков",
-      "id": 12
+      "name": "Тимур",
+      "surname": "Каргинов",
+      "patronymic": "Ахмедович",
+      "phone": "+7(248) 304-92-38",
+      "email": "teama@gmail.com",
+      "birthdate": "1979-07-07",
+      "department": 3,
+      "id": 26
     },
     {
-      "name": "Oxana",
-      "surname": "Cirkunova",
-      "id": 13
+      "name": "Всеволод",
+      "surname": "Давыдов",
+      "patronymic": "Стрелкович",
+      "phone": "+7(485) 302-85-81",
+      "email": "gude0s@gmail.com",
+      "birthdate": "1994-04-08",
+      "department": 0,
+      "id": 27
     },
     {
-      "name": "Alexandro",
-      "surname": "Mornello",
-      "id": 14
+      "name": "Лев",
+      "surname": "Кононов",
+      "patronymic": "Тигровичу",
+      "phone": "+7(988) 455-38-40",
+      "email": "franlken@gmail.com",
+      "birthdate": "1995-03-04",
+      "department": 2,
+      "id": 28
     },
     {
-      "name": "Igor",
-      "surname": "Sharonov",
-      "id": 16
+      "name": "Григорий",
+      "surname": "Молчанов",
+      "patronymic": "Молчанович",
+      "phone": "+7(753) 829-42-89",
+      "email": "lofjkl3@gmail.com",
+      "birthdate": "1988-01-21",
+      "department": 2,
+      "id": 29
     },
     {
-      "name": "Ilya",
-      "surname": "Kanatnikov",
-      "id": 17
+      "name": "Никита",
+      "surname": "Ефимов",
+      "patronymic": "Сысоевич",
+      "phone": "+7(857) 928-57-39",
+      "email": "deadbody@gmail.com",
+      "birthdate": "2001-09-10",
+      "department": 3,
+      "id": 30
+    }
+  ],
+  "portfolio" : [
+    {
+      "title": "Prytek",
+      "description": "Prytek is a multinational technology corporation with a focus on “tech-based operational managed services”",
+      "imagesrc": "prytekimg.png",
+      "link": "https://prytek.com/",
+      "id": "1"
     },
     {
-      "name": "Vlad",
-      "surname": "Abramov",
-      "id": 18
+      "title": "Reshutest",
+      "description": "Решутест — образовательная платформа для подготовки к тестам от компании MAXIMUM.",
+      "imagesrc": "reshutestimg.png",
+      "link": "https://reshutest.ru/",
+      "id": "2"
+    },
+    {
+      "title": "Apparat",
+      "description": "High-professional mobile development for serious projects",
+      "imagesrc": "apparatimg.png",
+      "link": "http://apparat.std-937.ist.mospolytech.ru/ ",
+      "id": "3"
+    },
+    {
+      "title": "Dispatch LT",
+      "description": "iPhone app for testing link-redirections",
+      "imagesrc": "dispatchimg.png",
+      "link": "http://dispatchlt.std-937.ist.mospolytech.ru/",
+      "id": "4"
+    },
+    {
+      "title": "Aksakal Coffee",
+      "description": "Information website for etnocafe in Dagestan",
+      "imagesrc": "aksakalimg.png",
+      "link": "http://aksakalcoffee.std-937.ist.mospolytech.ru/",
+      "id": "5"
+    },
+    {
+      "title": "Gazprom | RG",
+      "description": "«Родные города» — одна из инициатив российского бизнеса в области развития территорий.",
+      "imagesrc": "gazpromimg.png",
+      "link": "https://client.rodnyegoroda.alpha.trinitydigital.ru/",
+      "id": "6"
+    },
+    {
+      "title": "CactusWeb",
+      "description": "Google Chrome javascript native plagin for recellers",
+      "imagesrc": "cactusimg.png",
+      "link": "http://cactus.std-937.ist.mospolytech.ru/profiles.html",
+      "id": "7"
+    },
+    {
+      "title": "Clothes shop",
+      "description": "Internet-shop of clothes with PHP and MySql",
+      "imagesrc": "temirsultanov.png",
+      "link": "http://temirsultanov-shop.std-937.ist.mospolytech.ru/",
+      "id": "8"
+    },
+    {
+      "title": "Muhammad",
+      "description": "And just a website with name / surname css animation",
+      "imagesrc": "muhammad.png",
+      "link": "http://muhammad.std-937.ist.mospolytech.ru/",
+      "id": "9"
     }
   ]
 }

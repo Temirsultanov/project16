@@ -1,0 +1,10 @@
+.userForm label:after{
+  position: absolute;
+  content: "*";
+  color: rgb(184, 15, 15);
+  top: -2px;
+  right: -10px;
+}
+.userForm label{
+  position: relative;
+}

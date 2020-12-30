@@ -1,7 +1,22 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-12">
-      <h1>Main title</h1>
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="mb-4 mtitle">Home <span class="portfolio">> Portfolio</span></h1>
+
+      </div>
     </div>
+    <div class="row">
+
+      <div class="col-4" *ngFor="let work of portfolio">
+        <div class="card mcard">
+          <img class="card-img-top" src={{toImgSrc(work.imagesrc)}} alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">{{work.title}}</h5>
+            <p class="card-text">{{work.description}}</p>
+            <a href={{work.link}} class="btn btn-primary mbutton">See more</a>
+          </div>
+        </div>
+      </div>
+
   </div>
 </div>

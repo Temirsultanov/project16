@@ -1,5 +1,5 @@
 <div class="container-fluid mt-4">
-  <form [formGroup]="userForm">
+  <form [formGroup]="userForm" class="userForm">
     <div class="form-group">
       <label for="username">Name</label>
       <input
@@ -7,7 +7,7 @@
         name="name"
         class="form-control col-5"
         formControlName="name"
-        id="name"
+        id="username"
       >
     </div>
     <div class="form-group">
@@ -17,8 +17,57 @@
         name="surname"
         class="form-control col-5"
         formControlName="surname"
-        id="surname"
+        id="usersurname"
       >
+    </div>
+    <div class="form-group">
+      <label for="userpatronymic">Patronymic</label>
+      <input
+        type="text"
+        name="patronymic"
+        class="form-control col-5"
+        formControlName="patronymic"
+        id="userpatronymic"
+      >
+    </div>
+    <div class="form-group">
+      <label for="userphone">Phone</label>
+      <input
+        type="text"
+        name="phone"
+        class="form-control col-5"
+        formControlName="phone"
+        id="userphone"
+        [textMask]="{mask: phoneMask}"
+      >
+    </div>
+    <div class="form-group">
+      <label for="useremail">Email</label>
+      <input
+        type="email"
+        name="email"
+        class="form-control col-5"
+        formControlName="email"
+        id="useremail"
+      >
+    </div>
+    <div class="form-group">
+      <label for="userbirthdate">Birth Date</label>
+      <input
+        type="date"
+        name="birthdate"
+        class="form-control col-5"
+        formControlName="birthdate"
+        id="userbirthdate"
+      >
+    </div>
+    <div class="form-group">
+      <select name="department" class="form-control col-5" formControlName="department" id="department">
+        <option [ngValue]="muserDepartment.it">IT-department</option>
+        <option [ngValue]="muserDepartment.sales">Sales department</option>
+        <option [ngValue]="muserDepartment.delivery">Delivery department</option>
+        <option [ngValue]="muserDepartment.law">Law department</option>
+      </select>
     </div>
     <button class="btn btn-success mr-3" [disabled]="userForm.invalid" (click)="onSave()">Save</button>
     <button class="btn btn-outline-danger" *ngIf="id !== null && id !== undefined" (click)="onDelete()">Delete</button>

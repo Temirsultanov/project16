@@ -1,7 +1,35 @@
 <div class="container mt-5">
-  <div class="row">
-    <div class="col-12 mb-4">
+  <div class="row mb-4 align-items-center">
+    <div class="col-4">
       <h2 class="">User list</h2>
+    </div>
+    <div class="col-5 d-flex align-items-center">
+        <h6 class="mr-3 mb-0">Filter by:</h6>
+        <h6 class="mx-2 mb-0">ID</h6>
+        <button class="mbtn btn-top btn-outline-primary btn" [class.active]="idTop" (click)="onIdTop()">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 15.7071C12.3166 16.0976 11.6834 16.0976 11.2929 15.7071L5.29289 9.70711C4.90237 9.31658 4.90237 8.68342 5.29289 8.29289C5.68342 7.90237 6.31658 7.90237 6.70711 8.29289L12 13.5858L17.2929 8.29289C17.6834 7.90237 18.3166 7.90237 18.7071 8.29289C19.0976 8.68342 19.0976 9.31658 18.7071 9.70711L12.7071 15.7071Z" fill="#007bff"/>
+          </svg>
+        </button>
+        <button class="mbtn btn-bottom btn-outline-primary btn mx-2" [class.active]="idBottom"  (click)="onIdBottom()">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2929 8.29289C11.6834 7.90237 12.3166 7.90237 12.7071 8.29289L18.7071 14.2929C19.0976 14.6834 19.0976 15.3166 18.7071 15.7071C18.3166 16.0976 17.6834 16.0976 17.2929 15.7071L12 10.4142L6.70711 15.7071C6.31658 16.0976 5.68342 16.0976 5.29289 15.7071C4.90237 15.3166 4.90237 14.6834 5.29289 14.2929L11.2929 8.29289Z" fill="#007bff"/>
+          </svg>
+        </button>
+        <h6 class="mx-2 mb-0">Age</h6>
+        <button class="mbtn btn-top btn-outline-primary btn" [class.active]="ageTop"  (click)="onAgeTop()">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 15.7071C12.3166 16.0976 11.6834 16.0976 11.2929 15.7071L5.29289 9.70711C4.90237 9.31658 4.90237 8.68342 5.29289 8.29289C5.68342 7.90237 6.31658 7.90237 6.70711 8.29289L12 13.5858L17.2929 8.29289C17.6834 7.90237 18.3166 7.90237 18.7071 8.29289C19.0976 8.68342 19.0976 9.31658 18.7071 9.70711L12.7071 15.7071Z" fill="#007bff"/>
+          </svg>
+        </button>
+        <button class="mbtn btn-bottom btn-outline-primary btn mx-2" [class.active]="ageBottom"  (click)="onAgeBottom()">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2929 8.29289C11.6834 7.90237 12.3166 7.90237 12.7071 8.29289L18.7071 14.2929C19.0976 14.6834 19.0976 15.3166 18.7071 15.7071C18.3166 16.0976 17.6834 16.0976 17.2929 15.7071L12 10.4142L6.70711 15.7071C6.31658 16.0976 5.68342 16.0976 5.29289 15.7071C4.90237 15.3166 4.90237 14.6834 5.29289 14.2929L11.2929 8.29289Z" fill="#007bff"/>
+          </svg>
+        </button>
+    </div>
+    <div class="col-3">
+      <input type="text" class="form-control" [(ngModel)]="searchStr"/>
     </div>
   </div>
   <table class="table">
@@ -10,16 +38,20 @@
         <th scope="col">#</th>
         <th scope="col">Name</th>
         <th scope="col">Surname</th>
+        <th scope="col">Age</th>
+        <th scope="col">Department</th>
         <th scope="col" class="text-right">
           <button class="btn btn-primary" (click)="onAddProfile()">Add user</button>
         </th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let user of users">
+      <tr *ngFor="let user of users | filterpipe: searchStr : idTop : idBottom : ageTop : ageBottom">
         <th scope="row">{{user.id}}</th>
         <td>{{user.name}}</td>
         <td>{{user.surname}}</td>
+        <td>{{dateToAge(user.birthdate)}}</td>
+        <td>{{departmentCodeToString(user.department)}}</td>
         <td class="text-right">
           <button class="btn btn-outline-success" (click)="onEditProfile(user.id)">Change</button>
         </td>

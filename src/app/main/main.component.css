@@ -1,0 +1,18 @@
+.portfolio{
+  opacity: 1;
+  text-shadow: 0 1px 1px rgb(173, 173, 173);
+  font-size: 15px;
+  color: white;
+  vertical-align: middle;
+}
+.mbutton{
+  background-color: rgb(8, 177, 149);
+  transition: 0.3s ease;
+  border: 0;
+}
+.mbutton:hover{
+  background-color: rgb(9, 114, 97);
+}
+.mcard{
+  margin-bottom: 35px;
+}
